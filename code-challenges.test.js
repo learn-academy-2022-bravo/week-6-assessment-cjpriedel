@@ -24,6 +24,13 @@ const people = [
 
 // b) Create the function that makes the test pass.
 
+const capitalizerArr = (arr)//arr = people (line 1)
+return arr.map((value) => {
+let splitArray = value.name.split(' ')
+let capitalArr = splitArray[0][0].toUpperCase() + splitArray[0].substring(1) + " " + splitArray[1][0].toUpperCase() + splitArray[1].substring(1)
+return `${capitalArr} is a ${value.occupation}`  
+})
+}
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
